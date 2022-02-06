@@ -1,0 +1,128 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: 'Poppins', sans-serif;
+}
+.wrapper {
+	width: relative;
+	margin: auto;
+}
+header {
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(banner.jpg);
+	height: 100vh;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+}
+.nav-area {
+	float: right;
+	list-style: none;
+	margin-top: 30px;
+    padding-right: 100px;
+}
+.nav-area li {
+	display: inline-block;
+}
+.nav-area li a {
+	color: #fff;
+	text-decoration: none;
+	padding: 5px 20px;
+	font-family: poppins;
+	font-size: 16px;
+	text-transform: uppercase;
+}
+.nav-area li a:hover {
+	background: linear-gradient(to right, #622cc6, #fd0067);
+	color: #fff;
+    border-radius: 30px;
+}
+.logo {
+	float: left;
+}
+.logo img {
+	width: 15%;
+	padding-top: 15px;
+    padding-left: 100px;
+}
+.logo-text h1 {
+    position: absolute;
+    width: 200px;
+    height: 20px;
+    margin-top: 40px;
+    margin-left: 200px;
+    color: #fff;
+}
+.welcome-text {
+	position: absolute;
+	width: 900px;
+	height: 300px;
+	margin-left: 25%;
+    margin-top: 20%;
+	text-align: center;
+    padding-left: 6%;
+}
+.welcome-text h1 {
+	text-align: center;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 60px;
+    padding-left: 10%;
+}
+.welcome-text h1 span {
+	color: #ffa9fd;
+}
+.welcome-text a {
+    border-radius: 30px;
+	border: 2px solid #fff;
+	padding: 10px 25px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 14px;
+	margin-top: 20px;
+	display: inline-block;
+	color: #fff;
+    margin-left: 80px;
+}
+.welcome-text a:hover {
+	background: linear-gradient(to right, #622cc6, #fd0067);
+	color: #fff;
+    border-radius: 30px;
+}
+/*resposive*/
+
+@media (max-width:600px) {
+	.wrapper {
+		width: 100%;
+	}
+	.logo {
+		float: none;
+		width: 50%;
+		text-align: center;
+		margin: auto;
+	}
+	img {
+		width: 10;
+	}
+	.nav-area {
+		float: none;
+		margin-top: 0;
+	}
+	.nav-area li a {
+		padding: 5px;
+		font-size: 11px;
+	}
+	.nav-area {
+		text-align: center;
+	}
+	.welcome-text {
+		width: 100%;
+		height: auto;
+		margin: 30% 0;
+	}
+	.welcome-text h1 {
+		font-size: 30px;
+	}
+}
